@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('/fonts/TTLakesCompressed-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('/fonts/TTLakesCondensed-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  font-family: 'TT Lakes', 'Times New Roman', Times, sans-serif;
+}
+
+.header {
+  width: 320px;
+  height: 88px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-top: 24px;
+  margin-left: 10px;
+  padding-left: 0px;
+}
+.header-grey-stick {
+  visibility: hidden;
+}
+.header-rightside__stick {
+  display: none;
+}
+.header-leftside__stick {
+  display: none;
+}
+.header-leftside {
+  width: 320px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.header-rightside {
+  display: none;
+}
+.header-call {
+  visibility: visible;
+}
+.main-title {
+  height: 50px;
+  width: 304px;
+  display: flex;
+  gap: 20px;
+}
+.stick {
+  display: inline-block;
+}
+.main-title__headline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  padding-left: 7px;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+li {
+  width: 246px;
+  height: 40px;
+  display: inline;
+  margin-right: 10px;
+  padding: auto;
+}
+li:hover {
+  border: 2px solid #b8ffec;
+}
+.menu {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 40px;
+  width: 320px;
+  margin-top: 32px;
+}
+.description {
+  display: flex;
+  font-size: 14px;
+  margin-top: 24px;
+  margin-left: 30px;
+  height: 300px;
+  width: fit-content;
+  white-space: nowrap;
+}
+.description-image {
+  display: none;
+}
+.text {
+  display: block;
+}
+.second-paragraph {
+  display: none;
+}
+.continuation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 16px;
+}
+.continuation-title {
+  vertical-align: middle;
+}
+.main-title__icons{
+  display: none;
+}
+.main-picture {
+  display: none;
+  width: 100hw;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 776px;
+    height: 88px;
+  }
+  .menu {
+    overflow: hidden;
+    width: 776px;
+  }
+  .header__grey-stick {
+    display: none;
+  }
+  .header-leftside__stick {
+    display: inline;
+  }
+  .header-rightside {
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-right: 16px;
+    gap: 20px;
+  }
+  .header-leftside {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .header-left-icons{
+    display: none;
+  }
+  .header-divider {
+    visibility: hidden;
+  }
+  .first-paragraph {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 0;
+  }
+  .description-image {
+    margin-bottom: 130px;
+    display: block;
+  }
+  .main-picture {
+    display: inline;
+    height: 240px;
+    border-radius: 3%;
+    margin-top: 130px;
+  }
+  .picture {
+    display: none;
+  }
+  .second-paragraph {
+    display: block;
+    visibility: hidden;
+    height: 90px;
+    height: fit-content;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .continuation {
+    display: flex;
+   justify-content: flex-start;
+    margin-bottom: 100px;
+    margin-right: 40px;
+  }
+  
+  .text {
+    display: block;
+    visibility: visible;
+    font-size: 15px;
+  }
+  span.no-wrap{
+    display: none
+  }
+  
+
+@media(min-width: 1120px){
+  .header{
+    display: none;
+  }
+ 
+  .main-title{
+    width: 1096px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex: 1
+    gap: 20px;
+    align-items:center;
+    padding-top: 17px;
+    
+  }
+  .main-title__icons{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 200px;
+  }
+  .main-title__headline{
+    padding-top: 10px;
+  }
+  span.no-wrap{
+    font-weight: 600;
+    display: inline;
+  }
+  .second-paragraph,.first-paragraph{
+    width: fit-content;
+    visibility: visible;
+  }
+  .main-picture{
+    margin-left: 120px;
+  }
+}
