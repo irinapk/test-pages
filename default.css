@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'TT Lakes';
-  src: url('/fonts/TTLakesCompressedLight.ttf') format('truetype');
+  src: url('./fonts/TTLakesCompressedLight.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'TT Lakes';
-  src: url('/fonts/TTLakesCondensedDemiBold.ttf') format('truetype');
+  src: url('./fonts/TTLakesCondensedDemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
